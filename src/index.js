@@ -10,4 +10,19 @@ const client = new Client({
     ]
 });
 
+client.on('ready', (c) => {
+    console.log(`👧🏼 ${c.user.tag} has awoken...`);
+})
+
+client.on('messageCreate', (msg) =>{
+    // Check if message is by human
+    if(msg.author.bot){
+        return;
+    }
+
+    if (msg.content == 'Hello'){
+        msg.reply('Hey Pookie');
+    }
+})
+
 client.login(process.env.DISCORD_BOT_TOKEN);
