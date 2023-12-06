@@ -31,7 +31,8 @@ module.exports = {
             'goodbye chloe',
             'goodnight chloe',
             'see you later chloe',
-            'see ya later chloe'
+            'see ya later chloe',
+            'see ya chloe'
         ];
 
         //Check if message has a goodbye phrase. Non-Casesensitive

@@ -7,8 +7,7 @@ module.exports = {
             'Whats up queerzilla! 🦎',
             'Hey guuwrrrl! 💗',
             'Hiiiii 🥰',
-            'Hey gay! 🦄'
-            `Hey ${message.user.tag}`,
+            'Hey gay! 🦄',
             'Heyyy, how r u!',
             'Oh wow... ok. Hiiii',
             'Oi!',
