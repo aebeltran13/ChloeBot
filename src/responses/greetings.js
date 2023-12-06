@@ -3,10 +3,23 @@ module.exports = {
         const greetings = [
             'Hey Pookie 💋',
             'Hi sweety 💕',
-            'Hola lola 🧍🏼‍♀️'
+            'Hola lola 🧍🏼‍♀️',
+            'Whats up queerzilla! 🦎',
+            'Hey guuwrrrl! 💗',
+            'Hiiiii 🥰',
+            'Hey gay! 🦄'
+            `Hey ${message.user.tag}`,
+            'Heyyy, how r u!',
+            'Oh wow... ok. Hiiii',
+            'Oi!',
+            'Howdy!',
+            'Guid mornin',
+            'Guid eenin',
+            'How\'s it gauin?'
         ];
 
-        const greetingPhrases = ['hey chloe', 
+        const greetingPhrases = [
+            'hey chloe', 
             'hi chloe',
             'hello chloe',
             'hola chloe'
