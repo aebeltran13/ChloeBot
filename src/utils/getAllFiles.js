@@ -11,7 +11,7 @@ module.exports = (directory, foldersOnly = false) => {
 
     if(foldersOnly){
       if(file.isDirectory()) {
-        fileNames.push(filepath);
+        fileNames.push(filePath);
       }
     } else {
       if(file.isFile()) {
