@@ -1,10 +1,6 @@
 const { Client, IntentsBitField } = require("discord.js");
 require("dotenv").config();
 
-//Responses
-const { handleGreeting } = require("./responses/greetings");
-const { handleGoodbye } = require("./responses/goodbye");
-
 const client = new Client({
   intents: [
     IntentsBitField.Flags.Guilds,
@@ -14,18 +10,6 @@ const client = new Client({
   ],
 });
 
-client.once("ready", (c) => {
-  console.log(`${c.user.tag} has awoken... 👧🏼`);
-});
-
-client.on("messageCreate", (message) => {
-  // Check if message is by human
-  if (message.author.bot) {
-    return;
-  }
-
-  handleGreeting(message);
-  handleGoodbye(message);
-});
+eventHandler(client);
 
 client.login(process.env.DISCORD_BOT_TOKEN);
