@@ -6,6 +6,7 @@ module.exports = (client) => {
 
   for ( const eventFolder of eventFolders ) {
     const eventFiles = getAllFiles(eventFolder);
+    eventFiles.sort((a, b) => a > b);
     
     const eventName = eventFolder.replace(/\\/g, '/').split('/').pop();
     
@@ -13,7 +14,7 @@ module.exports = (client) => {
       for( const eventFile of eventFiles) {
         const eventFunction = require(eventFile);
         await eventFunction(client, arg);
-        // TODO: Time- 7:56
+
       }
     })
   }
