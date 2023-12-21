@@ -4,9 +4,17 @@ const { testServer } = require('../../../config.json');
 const getLocalCommands = require('../../utils/getLocalCommands');
 
 module.exports = (client) => {
-  const localCommands = getLocalCommands();
-
-  console.log(localCommands); 
+  
+  try {
+    const localCommands = getLocalCommands();
+    const applicationCommands = 
+    // Creating new file for utilts to get application commmandss
+    // TODO: 18:50 video. This is a tutorial break. Tutorial going fast asf so im stoping here to 
+    // to continue tomeeo which is another day to do Chloe bot basis. I will do separate 
+    // commands to make chloe my bot and not just a copy paste tutorial.
+  } catch (error) {
+    console.log(`There was an error: ${error}`)
+  }
 };
 
 // const commands = [
