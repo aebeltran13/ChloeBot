@@ -7,7 +7,10 @@ module.exports = (client) => {
   
   try {
     const localCommands = getLocalCommands();
+    // Stopped
     const applicationCommands = 
+    // This is the last part of makng a logical registering commands part of the 
+    // 'Under Ctrl' youtubr chnnel tutorial on how to make a bot.
     // Creating new file for utilts to get application commmandss
     // TODO: 18:50 video. This is a tutorial break. Tutorial going fast asf so im stoping here to 
     // to continue tomeeo which is another day to do Chloe bot basis. I will do separate 
