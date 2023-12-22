@@ -1,10 +1,14 @@
-const { ApplicationCommandOptionType, PermissionFlagsBits} = require('discord.js');
+const {
+  ApplicationCommandOptionType,
+  PermissionFlagsBits,
+} = require('discord.js');
 
 module.exports = {
+  deleted: true,
   name: 'ban',
-  description: 'Bans a member from the server',
-  // devOnly: Boolean
-  // testOnly: Boolean
+  description: 'Bans a member!!!',
+  // devOnly: Boolean,
+  // testOnly: Boolean,
   options: [
     {
       name: 'target-user',
@@ -14,15 +18,14 @@ module.exports = {
     },
     {
       name: 'reason',
-      description: 'Reason for ban',
-      required: false,
+      description: 'The reason for banning.',
       type: ApplicationCommandOptionType.String,
     },
   ],
-
   permissionsRequired: [PermissionFlagsBits.Administrator],
+  botPermissions: [PermissionFlagsBits.Administrator],
 
   callback: (client, interaction) => {
-    interaction.reply(`ban.. `);
-  }
-}
+    interaction.reply('ban..');
+  },
+};

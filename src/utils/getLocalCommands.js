@@ -9,14 +9,13 @@ module.exports = (exceptions = []) => {
     true
   );
 
-  for (const commandCategory of commandCategories){
+  for (const commandCategory of commandCategories) {
     const commandFiles = getAllFiles(commandCategory);
 
-    for(const commandFile of commandFiles){
+    for (const commandFile of commandFiles) {
       const commandObject = require(commandFile);
 
-      // Check if the name exists
-      if (exceptions.includes(commandObject.name)){
+      if (exceptions.includes(commandObject.name)) {
         continue;
       }
 
