@@ -9,16 +9,16 @@ module.exports = (directory, foldersOnly = false) => {
   for (const file of files) {
     const filePath = path.join(directory, file.name);
 
-    if(foldersOnly){
-      if(file.isDirectory()) {
+    if (foldersOnly) {
+      if (file.isDirectory()) {
         fileNames.push(filePath);
       }
     } else {
-      if(file.isFile()) {
+      if (file.isFile()) {
         fileNames.push(filePath);
       }
     }
   }
 
-  return fileNames
+  return fileNames;
 };
